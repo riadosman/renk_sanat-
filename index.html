@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Renkli Dokunuşlar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- CSS dosyası -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <h1>Renk Sanatı</h1>
+          <span>Soner ALTUN</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#hakkinda">Hakkında</a></li>
+            <li><a href="#hizmetler">Hizmetler</a></li>
+            <li><a href="#portfoy">Portföy</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="anasayfa" class="hero">
+        <img src="./1.jpeg" alt="" />
+        <img src="./2.jpeg" alt="" />
+        <div class="container">
+          <h2>Evlerinizi Renklerle Doldurun!</h2>
+          <p>Kaliteli malzemelerle profesyonel boya hizmeti.</p>
+          <a href="#iletisim" class="cta-button">Hizmet Alın</a>
+        </div>
+        <img src="./3.jpeg" alt="" />
+        <img src="./4.jpeg" alt="" />
+      </section>
+      <section id="hakkinda" class="about">
+        <div class="container">
+          <h2>Hakkında</h2>
+          <p>
+            Renk Sanatı, yaşam alanlarınıza ruh katmanın bir yoludur. Renk,
+            sadece bir görsel unsur değil, duygularımızı ve deneyimlerimizi
+            şekillendiren güçlü bir dil gibidir. Mekanlar, doğru renklerle hayat
+            bulur; her ton, farklı bir hikaye anlatır.
+          </p>
+          <p>
+            Uzman ekibimiz, renklerin psikolojik etkilerini anlamakla kalmaz,
+            aynı zamanda bunları mekanınıza özel bir tasarım haline getirir.
+            Sıcak, canlı renkler enerjiyi artırırken, soft pastel tonlar huzuru
+            davet eder. Hayalinizdeki atmosferi yaratmak için buradayız.
+          </p>
+          <p>
+            Renk Sanatı, sıradanı olağanüstü kılmak için yenilikçi teknikler ve
+            özgün desenler kullanarak, mekanlarınızı kişisel birer sanat eserine
+            dönüştürür. İster ev, ister ofis; her alana özel dokunuşlar yaparak,
+            mekanlarınıza hayat katmak için bizimle iletişime geçin.
+          </p>
+          <p>
+            Renklerin büyülü dünyasında kaybolarak yaşam alanlarınızı yeniden
+            keşfedin. **Renk Sanatı** ile yaşamınıza yeni bir soluk getirin!
+          </p>
+        </div>
+      </section>
+
+      <section id="hizmetler" class="services">
+        <div class="container">
+          <h2>Hizmetlerimiz</h2>
+          <div class="services">
+            <div class="service-card">
+              <img
+                src="icmekan.jpeg"
+                alt="İç Mekan Boya"
+                class="service-image"
+              />
+              <div class="service-content">
+                <h3>İç Mekan Boya</h3>
+                <p>Geniş renk seçenekleri ile iç mekanlarınızı canlandırın.</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <img
+                src="dekoratif.jpeg"
+                alt="Dekoratif Boya"
+                class="service-image"
+              />
+              <div class="service-content">
+                <h3>Dekoratif Duvar Çıtası</h3>
+                <p>Özel teknikler ile dekoratif görünümler yaratın.</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <img src="ro.jpeg" alt="Restorasyon" class="service-image" />
+              <div class="service-content">
+                <h3>Restorasyon (Alçı)</h3>
+                <p>Eski yapıları yenileyerek tarihi dokuyu koruyun.</p>
+              </div>
+            </div>
+
+            <div class="service-card">
+              <img src="5.jpeg" alt="Duvar Paneli" class="service-image" />
+              <div class="service-content">
+                <h3>Duvar Paneli</h3>
+                <p>
+                  Estetik ve fonksiyonel duvar panelleri ile mekanlarınıza
+                  modern bir dokunuş katın.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="portfoy" class="portfolio">
+        <div class="container">
+          <h2>Portföy</h2>
+          <div class="gallery">
+            <img src="portfolio1.jpg" alt="Örnek İş 1" class="portfolio-img" />
+            <img src="portfolio1.jpg" alt="Örnek İş 2" class="portfolio-img" />
+            <img src="portfolio1.jpg" alt="Örnek İş 3" class="portfolio-img" />
+          </div>
+        </div>
+      </section>
+
+      <section id="iletisim" class="contact">
+        <div class="container">
+          <h2>İletişim</h2>
+          <form>
+            <label for="isim">İsim:</label>
+            <input type="text" id="isim" name="isim" required />
+
+            <label for="email">E-posta:</label>
+            <input type="email" id="email" name="email" required />
+
+            <label for="mesaj">Mesaj:</label>
+            <textarea id="mesaj" name="mesaj" required></textarea>
+
+            <button type="submit" class="cta-button">Gönder</button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>&copy; 2024 Renkli Dokunuşlar | Tüm hakları saklıdır.</p>
+      </div>
+    </footer>
+  </body>
+</html>
