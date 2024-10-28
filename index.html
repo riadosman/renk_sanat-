@@ -38,15 +38,17 @@
 
     <main>
       <section id="anasayfa" class="hero">
-        <img src="./1.jpeg" alt="" />
-        <img src="./2.jpeg" alt="" />
+        <img src="./assets/1.jpeg" alt="" />
+        <img src="./assets/2.jpeg" alt="" />
         <div class="container">
           <h2>Evlerinizi Renklerle Doldurun!</h2>
           <p>Kaliteli malzemelerle profesyonel boya hizmeti.</p>
-          <a href="#iletisim" class="cta-button">Hizmet Alın</a>
+          <button class="cta-button">
+            <a href="tel:+905539890938">Hizmet Alın</a>
+          </button>
         </div>
-        <img src="./3.jpeg" alt="" />
-        <img src="./4.jpeg" alt="" />
+        <img src="./assets/3.jpeg" alt="" />
+        <img src="./assets/4.jpeg" alt="" />
       </section>
       <section id="hakkinda" class="about">
         <div class="container">
@@ -82,7 +84,7 @@
           <div class="services">
             <div class="service-card">
               <img
-                src="icmekan.jpeg"
+                src="./assets/icmekan.jpeg"
                 alt="İç Mekan Boya"
                 class="service-image"
               />
@@ -94,7 +96,7 @@
 
             <div class="service-card">
               <img
-                src="dekoratif.jpeg"
+                src="./assets/dekoratif.jpeg"
                 alt="Dekoratif Boya"
                 class="service-image"
               />
@@ -105,7 +107,11 @@
             </div>
 
             <div class="service-card">
-              <img src="ro.jpeg" alt="Restorasyon" class="service-image" />
+              <img
+                src="./assets/ro.jpeg"
+                alt="Restorasyon"
+                class="service-image"
+              />
               <div class="service-content">
                 <h3>Restorasyon (Alçı)</h3>
                 <p>Eski yapıları yenileyerek tarihi dokuyu koruyun.</p>
@@ -113,7 +119,11 @@
             </div>
 
             <div class="service-card">
-              <img src="5.jpeg" alt="Duvar Paneli" class="service-image" />
+              <img
+                src="./assets/5.jpeg"
+                alt="Duvar Paneli"
+                class="service-image"
+              />
               <div class="service-content">
                 <h3>Duvar Paneli</h3>
                 <p>
@@ -129,29 +139,33 @@
       <section id="portfoy" class="portfolio">
         <div class="container">
           <h2>Portföy</h2>
-          <div class="gallery">
-            <img src="portfolio1.jpg" alt="Örnek İş 1" class="portfolio-img" />
-            <img src="portfolio1.jpg" alt="Örnek İş 2" class="portfolio-img" />
-            <img src="portfolio1.jpg" alt="Örnek İş 3" class="portfolio-img" />
-          </div>
+          <div class="gallery" id="gallery"></div>
         </div>
       </section>
 
       <section id="iletisim" class="contact">
         <div class="container">
-          <h2>İletişim</h2>
-          <form>
-            <label for="isim">İsim:</label>
-            <input type="text" id="isim" name="isim" required />
-
-            <label for="email">E-posta:</label>
-            <input type="email" id="email" name="email" required />
-
-            <label for="mesaj">Mesaj:</label>
-            <textarea id="mesaj" name="mesaj" required></textarea>
-
-            <button type="submit" class="cta-button">Gönder</button>
-          </form>
+          <h2>İletişim Bilgileri</h2>
+          <ul class="contact-info">
+            <li>
+              <strong>Telefon:</strong>
+              <a href="tel:+905539890938">+90553 989 09 38</a>
+            </li>
+            <li>
+              <strong>E-posta:</strong>
+              <a href="mailto:soner216304@gmail.com">soner216304@gmail.com</a>
+            </li>
+            <li>
+              <strong>Adres:</strong>
+              İstanbul
+            </li>
+            <li>
+              <strong>instagram:</strong>
+              <a href="https://www.instagram.com/soneraltun3452/"
+                >soneraltun3452</a
+              >
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -161,5 +175,6 @@
         <p>&copy; 2024 Renkli Dokunuşlar | Tüm hakları saklıdır.</p>
       </div>
     </footer>
+    <script src="./script.js"></script>
   </body>
 </html>

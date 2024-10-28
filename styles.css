@@ -21,7 +21,7 @@ body {
 .container {
   width: 90%;
   max-width: 1200px;
-  margin: auto;
+  margin: 0 auto;
 }
 
 header {
@@ -63,6 +63,8 @@ nav ul li {
   text-align: center; /* Metni ortala */
   transition: transform 0.3s; /* Hover efekti için geçiş */
   padding: 20px;
+  width: 300px;
+  height: 450px;
 }
 
 .service-card:hover {
@@ -70,7 +72,8 @@ nav ul li {
 }
 
 .service-image {
-  width: 100%; /* Resmi tam genişlikte göster */
+  width: 200px;
+  height: 200px; /* Resmi tam genişlikte göster */
   height: auto; /* Yüksekliği otomatik ayarla */
 }
 
@@ -97,31 +100,48 @@ nav ul li a {
 nav ul li a:hover {
   color: var(--main-color);
 }
-
 .hero {
   background: var(--main-color);
   color: #fff;
-  padding: 0;
   text-align: center;
   display: flex;
+  flex-direction: row;
   align-items: center;
 }
 .hero img {
   width: 250px;
   height: 200px;
 }
-.hero .cta-button {
-  background: #fff;
-  color: var(--main-color);
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background 0.3s;
+.hero .container .cta-button:hover {
+  background-color: transparent;
+  color: white;
+  cursor: pointer;
+  border: 1px solid white;
 }
-
-.hero .cta-button:hover {
-  background: var(--main-color);
-  color: #fff;
+.hero .container .cta-button {
+  border: 1px solid white;
+  background-color: white;
+  text-decoration: none;
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  color: #77b262;
+  cursor: pointer;
+}
+.hero .container .cta-button a {
+  text-decoration: none;
+}
+/* Media query for larger screens */
+@media (max-width: 1200px) {
+  .hero {
+    flex-direction: column;
+  }
+  .hero img {
+    height: 400px;
+    width: 100%;
+  }
 }
 
 .about,
@@ -169,20 +189,6 @@ form textarea {
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 4px;
-}
-
-.cta-button {
-  background: var(--main-color);
-  color: #fff;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background 0.3s;
-}
-
-.cta-button:hover {
-  background: #77b262; /* Daha koyu bir ton */
 }
 
 footer {
@@ -239,4 +245,33 @@ footer {
   .services {
     flex-direction: column;
   }
+  .gallery .portfolio-img {
+    width: 100%;
+    margin: 10px auto;
+  }
+}
+.contact {
+  background-color: #f9f9f9; /* Açık gri arka plan */
+  padding: 60px 20px; /* İç boşluk */
+  border-radius: 8px; /* Köşeleri yuvarla */
+  text-align: center; /* Ortalı metin */
+}
+
+.contact-info {
+  list-style-type: none; /* Madde işaretlerini kaldır */
+  padding: 0; /* İç boşluğu kaldır */
+}
+
+.contact-info li {
+  margin: 15px 0; /* Her bilgi arasında boşluk */
+}
+
+.contact-info a {
+  color: #88c273; /* Bağlantı rengi */
+  text-decoration: none; /* Alt çizgiyi kaldır */
+  transition: color 0.3s; /* Renk değişimi için geçiş efekti */
+}
+
+.contact-info a:hover {
+  color: #333; /* Hover'da renk değişimi */
 }
